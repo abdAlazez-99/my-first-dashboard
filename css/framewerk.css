@@ -1,0 +1,167 @@
+/* layout */
+.d-block {
+  display: block;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.al-center {
+  align-items: center;
+}
+
+.flx-bt {
+  justify-content: space-between;
+}
+
+.gap-5 {
+  gap: calc(var(--px-x) / 2);
+}
+.gap-10 {
+  gap: var(--px-x);
+}
+.gap-20 {
+  gap: var(--px-2x);
+}
+
+.d-grid {
+  display: grid;
+}
+@media (max-width: 47.9375rem) {
+  .d-block-moblie {
+    display: block;
+  }
+}
+/* end-layout */
+/* over flow */
+.over-hidden {
+  overflow: hidden;
+}
+/* end over flow */
+
+/* padding - margin */
+.p-10 {
+  padding: var(--px-x);
+}
+
+.p-tb-10 {
+  padding: var(--px-x);
+}
+
+.p-15 {
+  padding: 0.9375rem;
+}
+
+.p-20 {
+  padding: var(--px-2x);
+}
+
+.pt-20 {
+  padding-block-start: 1.25rem;
+}
+.p-tb-20 {
+  padding: var(--px-2x);
+}
+@media (max-width: 47.9375rem) {
+  .p-5-mobile {
+    padding: calc(var(--px-x) / 2);
+  }
+}
+@media (max-width: 47.9375rem) {
+  .p-10-mobile {
+    padding: var(--px-x);
+  }
+}
+
+.m-20 {
+  margin: 1.25rem;
+}
+.mt-20 {
+  margin-top: var(--px-2x);
+}
+/* end padding - margin */
+.w-ft {
+  width: fit-content;
+}
+/* background */
+.bg-eee {
+  background-color: #eee;
+}
+.bg-blue {
+  background-color: var(--blue-color);
+}
+.hover-blue:hover {
+  background-color: var(--blue-alt-color);
+}
+.bg-white {
+  background-color: #fff;
+}
+
+/* end background */
+/* border */
+.rad-6 {
+  border-radius: 0.375em;
+}
+.rad-10 {
+  border-radius: var(--px-x);
+}
+
+.rad-half {
+  border-radius: 50%;
+}
+/* end border */
+/* position */
+.relative {
+  position: relative;
+}
+/* end position */
+/* font */
+.txt-center {
+  text-align: center;
+}
+@media (max-width: 47.9375rem) {
+  .txt-center-mobile {
+    text-align: center;
+  }
+}
+.txt-cap {
+  text-transform: capitalize;
+}
+.txt-upper {
+  text-transform: uppercase;
+}
+.c-black {
+  color: #000;
+}
+.c-green {
+  color: var(--green-color);
+}
+.c-orange {
+  color: var(--orange-color);
+}
+.c-red {
+  color: var(--red-color);
+}
+.c-blue {
+  color: var(--blue-color)
+}
+/* end font */
+/* componant */
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-shape {
+  border: none;
+  padding: 0.25rem var(--px-x);
+  font-size: 1rem;
+  border-radius: 0.9rem;
+}

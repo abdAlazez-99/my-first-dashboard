@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/framewerk.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Dashboard-me</title>
+  </head>
+  <body>
+    <main class="d-flex">
+      <aside class="bg-white p-20 relative">
+        <h3 class="relative txt-center txt-cap">abd alazez</h3>
+        <ul>
+          <li>
+            <a
+              href="index.html"
+              class="active c-black txt-cap p-10 d-flex al-center gap-10 rad-6"
+            >
+              <i class="fa-solid fa-chart-pie fa-fw"></i>
+              <span>dashboard</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="settings.html"
+              class="c-black txt-cap p-10 d-flex al-center gap-10 rad-6"
+            >
+              <i class="fa-solid fa-gear fa-fw"></i>
+              <span>settings</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="profile.html"
+              class="c-black txt-cap p-10 d-flex al-center gap-10 rad-6"
+            >
+              <i class="fa-regular fa-user fa-fw"></i>
+              <span>profile</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="projects.html"
+              class="c-black txt-cap p-10 d-flex al-center gap-10 rad-6"
+            >
+              <i class="fa-solid fa-diagram-project fa-fw"></i>
+              <span>projects</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="courses.html"
+              class="c-black txt-cap p-10 d-flex al-center gap-10 rad-6"
+            >
+              <i class="fa-solid fa-graduation-cap fa-fw"></i>
+              <span>courses</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="friends.html"
+              class="c-black txt-cap p-10 d-flex al-center gap-10 rad-6"
+            >
+              <i class="fa-regular fa-circle-user fa-fw"></i>
+              <span>friends</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="files.html"
+              class="c-black txt-cap p-10 d-flex al-center gap-10 rad-6"
+            >
+              <i class="fa-regular fa-file fa-fw"></i>
+              <span>files</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="plans.html"
+              class="c-black txt-cap p-10 d-flex al-center gap-10 rad-6"
+            >
+              <i class="fa-regular fa-credit-card fa-fw"></i>
+              <span>plans</span>
+            </a>
+          </li>
+        </ul>
+      </aside>
+      <section class="content">
+        <!-- header -->
+        <header class="flex-between p-20 bg-white">
+          <div class="search relative">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="search" placeholder="type a keyword" />
+          </div>
+          <div class="icons d-flex al-center gap-10 relative">
+            <i class="fa-regular fa-bell fa-lg"></i>
+            <img src="images/avatar.png" alt="avatar" />
+          </div>
+        </header>
+        <!-- end header -->
+        <h1 class="relative txt-cap p-20">dashboard</h1>
+        <div class="wrapper p-20 d-grid gap-20 p-10-mobile">
+          <!-- welcome -->
+          <article class="welcome bg-white rad-10 over-hidden">
+            <div class="head relative p-20 p-5-mobile flex-between">
+              <div class="txt">
+                <h2>welcome</h2>
+                <p>abd alazez</p>
+              </div>
+              <figure>
+                <img src="images/welcome.png" alt="peaple" />
+              </figure>
+              <img src="images/avatar.png" alt="avatar" class="rad-half" />
+            </div>
+            <div
+              class="info flex-between p-20 p-10-mobile gap-20 txt-center txt-cap"
+            >
+              <div class="name">
+                <p>abdAlazez</p>
+                <span>developer</span>
+              </div>
+              <div class="projects">
+                <p>80</p>
+                <span>projects</span>
+              </div>
+              <div class="earned">
+                <p>$8500</p>
+                <span>earned</span>
+              </div>
+            </div>
+            <a
+              href="profile.html"
+              class="btn-shape m-20 bg-blue hover-blue d-block w-ft"
+              >profile</a
+            >
+          </article>
+          <!-- end welcome -->
+
+          <!-- draft -->
+          <article class="draft bg-white rad-10 p-20 p-10-mobile">
+            <h2>quick draft</h2>
+            <p>Write A Draft For Your Ideas</p>
+            <form action="#">
+              <input
+                type="text"
+                placeholder="Title"
+                class="d-block p-10 rad-6 bg-eee"
+              />
+              <textarea
+                placeholder="Your throught"
+                class="d-block p-10 rad-6 bg-eee"
+              ></textarea>
+              <input
+                type="submit"
+                value="save"
+                class="btn-shape bg-blue d-block hover-blue"
+              />
+            </form>
+          </article>
+          <!-- end draft -->
+
+          <!-- targets -->
+          <article class="targets bg-white p-20 p-10-mobile rad-10">
+            <h2>yearly targets</h2>
+            <p>Targets Of The Year</p>
+            <div class="mony-box d-flex gap-10 al-center">
+              <i class="fa-solid fa-dollar-sign c-blue fa-lg flex-center"></i>
+              <div class="info">
+                <span class="d-block">money</span>
+                <span class="d-block">$20.000</span>
+                <span class="d-block"
+                  ><span
+                    style="width: 80%"
+                    data-set="80%"
+                    class="relative"
+                  ></span
+                ></span>
+              </div>
+            </div>
+            <div class="projects-box d-flex gap-10 al-center">
+              <i class="fa-solid fa-code c-orange fa-lg flex-center"></i>
+              <div class="info">
+                <span class="d-block">projects</span>
+                <span class="d-block">24</span>
+                <span class="d-block"
+                  ><span
+                    style="width: 55%"
+                    data-set="55%"
+                    class="relative"
+                  ></span
+                ></span>
+              </div>
+            </div>
+            <div class="team-box d-flex gap-10 al-center">
+              <i class="fa-solid fa-user c-green fa-lg flex-center"></i>
+              <div class="info">
+                <span class="d-block">Team</span>
+                <span class="d-block">12</span>
+                <span class="d-block"
+                  ><span
+                    style="width: 75%"
+                    data-set="75%"
+                    class="relative"
+                  ></span
+                ></span>
+              </div>
+            </div>
+          </article>
+          <!-- end targets -->
+
+          <!-- statistics -->
+          <article class="statistics bg-white rad-10 p-20 p-10-mobile">
+            <h2>Tickets Statistics</h2>
+            <p>Everything About Support Tickets</p>
+            <div class="boxes d-grid gap-20 mt-20">
+              <div class="total p-10 txt-center rad-6">
+                <i class="fa-regular fa-rectangle-list fa-2x c-orange"></i>
+                <p>Total</p>
+                <span>500 </span>
+              </div>
+              <div class="pending p-10 txt-center rad-6">
+                <i class="fa-solid fa-spinner c-blue fa-2x"></i>
+                <p>2500</p>
+                <span>Pending</span>
+              </div>
+              <div class="closed p-10 txt-center rad-6">
+                <i class="fa-regular fa-circle-check fa-2x c-green"></i>
+                <p>1900</p>
+                <span>Closed</span>
+              </div>
+              <div class="deleted p-10 txt-center rad-6">
+                <i class="fa-regular fa-rectangle-xmark fa-2x c-red"></i>
+                <p>100</p>
+                <span>Deleted</span>
+              </div>
+            </div>
+          </article>
+          <!-- end statistics -->
+
+          <!-- news -->
+          <article class="news bg-white p-20 p-10-mobile rad-10">
+            <h2>latest news</h2>
+            <div class="news-boxes">
+              <div class="flex-between">
+                <div class="info d-flex al-center gap-10">
+                  <img src="images/news-01.png" class="rad-6" />
+                  <div class="txt">
+                    <h3>Created SASS Section</h3>
+                    <p>New SASS Examples & Tutorials</p>
+                  </div>
+                </div>
+                <span class="d-block rad-6 txt-center">5 days age</span>
+              </div>
+              <div class="flex-between">
+                <div class="info d-flex al-center gap-10">
+                  <img src="images/news-02.png" class="rad-6" />
+                  <div class="txt">
+                    <h3>Changed The Design</h3>
+                    <p>A Brand New Website Design</p>
+                  </div>
+                </div>
+                <span class="d-block rad-6 txt-center">7 days age</span>
+              </div>
+              <div class="flex-between">
+                <div class="info d-flex al-center gap-10">
+                  <img src="images/news-03.png" class="rad-6" />
+                  <div class="txt">
+                    <h3>Team Increased</h3>
+                    <p>3 Developers Joined The Team</p>
+                  </div>
+                </div>
+                <span class="d-block rad-6 txt-center">10 days ago</span>
+              </div>
+              <div class="flex-between">
+                <div class="info d-flex al-center gap-10">
+                  <img src="images/news-04.png" class="rad-6" />
+                  <div class="txt">
+                    <h3>Added Payment Gateway</h3>
+                    <p>Many New Payment Gateways Added</p>
+                  </div>
+                </div>
+                <span class="d-block rad-6 txt-center">2 days ago</span>
+              </div>
+            </div>
+          </article>
+          <!-- end news -->
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
