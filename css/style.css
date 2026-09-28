@@ -454,3 +454,35 @@ section.content .wrapper {
     }
   }
 }
+/* tasks */
+.wrapper .tasks {
+  & > div {
+    border-bottom: 1px solid #eee;
+    .txt {
+      h3 {
+        margin: 0;
+        font-size: 1rem;
+      }
+      p {
+        margin: 0.5rem 0 0;
+        color: var(--grey-color);
+        font-size: 14px;
+      }
+    }
+    i {
+      transition: color var(--duration);
+      &:hover {
+        color: var(--red-color);
+      }
+      cursor: pointer;
+    }
+  }
+}
+/* end tasks */
+/* search-item */
+.search-item {
+  .bg-eee {
+    padding: 4px 6px;
+  }
+}
+/* end search-item */
