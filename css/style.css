@@ -131,6 +131,7 @@ main aside {
 /* end aside */
 main section.content {
   flex: 1;
+overflow: hidden;
 }
 
 section.content header {
