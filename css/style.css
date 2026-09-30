@@ -563,3 +563,112 @@ section.content .wrapper {
   }
 }
 /* end projects */
+/* reminder */
+.wrapper .reminder {
+  ul {
+    li {
+      &::before {
+        content: "";
+        width: 15px;
+        height: 15px;
+
+        border-radius: 50%;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+      &::after {
+        content: "";
+        width: 2px;
+        height: 100%;
+        position: absolute;
+        left: 30px;
+        top: 0;
+      }
+      padding-left: 50px;
+      p {
+        margin: 0 0 5px;
+        font-weight: bold;
+      }
+      span {
+        color: var(--grey-color);
+        font-size: 14px;
+      }
+    }
+    li:first-child::before,
+    li:first-child::after {
+      background-color: var(--blue-color);
+    }
+    li:nth-child(2)::before,
+    li:nth-child(2)::after {
+      background-color: var(--green-color);
+    }
+    li:nth-child(3)::before,
+    li:nth-child(3)::after {
+      background-color: var(--orange-color);
+    }
+    li:last-child::before,
+    li:last-child::after {
+      background-color: var(--red-color);
+    }
+  }
+}
+/* end reminder */
+/* latest post */
+.wrapper .latest-post {
+  header + p {
+    padding-block: var(--px-2x);
+    border-block: 1px solid #ccc;
+    margin-block: var(--px-2x);
+  }
+}
+/* end latest post */
+/* social-media */
+.social-media {
+  .box {
+    background-color: rgb(0 119 255 / 15%);
+    padding-right: var(--px-x);
+    &:nth-child(4) {
+      background-color: rgb(244 67 54 / 15%);
+    }
+    i {
+      width: 50px;
+      height: 50px;
+      transition: transform var(--duration);
+      &:hover {
+        transform: rotate(5deg);
+      }
+    }
+    span {
+      flex: 1;
+    }
+  }
+}
+/* end social-media */
+.projects-table {
+  /* overflow: hidden; */
+  max-width: 100%;
+  .resbonsive-table {
+    overflow-x: auto;
+    table {
+      min-width: 1000px;
+      width: 100%;
+      border-spacing: 0;
+      border-collapse: collapse;
+      th,
+      td {
+        padding: 15px;
+      }
+      td {
+        border: 1px solid #eee;
+        img {
+          width: 30px;
+        }
+        img:not(:first-child) {
+          margin-left: -15px;
+        }
+      }
+    }
+  }
+}
