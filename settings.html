@@ -174,6 +174,205 @@
               </div>
             </form>
           </div>
+          <article class="security-info bg-white rad-10 p-20 p-10-mobile">
+            <div class="title">
+              <h2>Security Info</h2>
+              <p>Security Information About Your Account</p>
+            </div>
+            <div class="password flex-between pb-20">
+              <div class="txt">
+                <p>Password</p>
+                <span class="c-grey fs-14">Last Change On 25/10/2021</span>
+              </div>
+              <a href="" class="btn-shape bg-blue c-white">change</a>
+            </div>
+            <div class="auth pb-20 flex-between m-block-10">
+              <div class="txt">
+                <p>Two-Factor Authentication</p>
+                <span class="c-grey fs-14">Enable/Disable The Feature</span>
+              </div>
+              <label class="toggle-switch d-flex al-center relative bg-ccc">
+                <input
+                  type="checkbox"
+                  class="bg-white c-ccc rad-half flex-center"
+                />
+              </label>
+            </div>
+            <div class="device flex-between">
+              <div class="txt">
+                <p>Devices</p>
+                <span class="c-grey fs-14">Check The Login Devices List</span>
+              </div>
+              <a href="" class="btn-shape bg-ccc">devices</a>
+            </div>
+          </article>
+
+          <article class="social-info bg-white p-20 p-10-mobile rad-10">
+            <div class="title">
+              <h2>social info</h2>
+              <p>Social Media Information</p>
+            </div>
+            <form>
+              <div class="x d-flex al-center mb-10 rad-6">
+                <label for="x">
+                  <i class="fa-brands fa-x p-10 c-grey flex-center"></i>
+                </label>
+                <input
+                  type="text"
+                  id="x"
+                  placeholder="X username"
+                  class="txt-cap"
+                />
+              </div>
+              <div class="facebook d-flex al-center mb-10 rad-6">
+                <label for="facebook">
+                  <i class="fa-brands fa-facebook p-10 c-grey flex-center"></i>
+                </label>
+                <input
+                  type="text"
+                  id="facebook"
+                  placeholder="facebook username"
+                  class="txt-cap"
+                />
+              </div>
+              <div class="linkedin d-flex al-center mb-10 rad-6">
+                <label for="linkedin">
+                  <i class="fa-brands fa-linkedin p-10 c-grey flex-center"></i>
+                </label>
+                <input
+                  type="text"
+                  id="linkedin"
+                  placeholder="linkedin username"
+                  class="txt-cap"
+                />
+              </div>
+              <div class="youtube d-flex al-center mb-10 rad-6">
+                <label for="youtube">
+                  <i class="fa-brands fa-youtube p-10 c-grey flex-center"></i>
+                </label>
+                <input
+                  type="text"
+                  id="youtube"
+                  placeholder="youtube username"
+                  class="txt-cap"
+                />
+              </div>
+              <input
+                type="submit"
+                value="send"
+                class="btn-shape bg-blue c-white d-block mt-20"
+              />
+            </form>
+          </article>
+
+          <article class="widgets-control bg-white rad-10 p-20 p-10-mobile">
+            <div class="title">
+              <h2>Widgets Control</h2>
+              <p>Show/Hide Widgets</p>
+            </div>
+            <form>
+              <div class="opt relative">
+                <input
+                  type="checkbox"
+                  name="widgits"
+                  id="quick-draft"
+                  value="quick-draft"
+                  checked
+                />
+                <label for="quick-draft"> quick draft </label>
+              </div>
+              <div class="opt relative">
+                <input
+                  type="checkbox"
+                  name="widgits"
+                  id="Yearly-Targets"
+                  value="Yearly-Targets"
+                  checked
+                />
+                <label for="Yearly-Targets"> Yearly Targets </label>
+              </div>
+              <div class="opt relative">
+                <input
+                  type="checkbox"
+                  name="widgits"
+                  id="Tickets-Statistics"
+                  value="Tickets-Statistics"
+                />
+                <label for="Tickets-Statistics"> Tickets Statistics </label>
+              </div>
+              <div class="opt relative">
+                <input
+                  type="checkbox"
+                  name="widgits"
+                  id="Latest-News"
+                  value="Latest-News"
+                  checked
+                />
+                <label for="Latest-News"> Latest News </label>
+              </div>
+              <div class="opt relative">
+                <input
+                  type="checkbox"
+                  name="widgits"
+                  id="Latest-Tasks"
+                  value="Latest-Tasks"
+                />
+                <label for="Latest-Tasks"> Latest Tasks </label>
+              </div>
+              <div class="opt relative">
+                <input
+                  type="checkbox"
+                  name="widgits"
+                  id="Top Search-Items"
+                  value="Top Search-Items"
+                />
+                <label for="Top Search-Items"> Search Items </label>
+              </div>
+            </form>
+          </article>
+
+          <article class="backup bg-white p-20 p-10-mobile rad-10">
+            <div class="title">
+              <h2>Backup Manager</h2>
+              <p>Control Backup Time And Location</p>
+            </div>
+            <form>
+              <section class="time">
+                <div class="daily">
+                  <label for="daily" class="relative"
+                    ><input type="radio" id="daily" name="ch" />daily</label
+                  >
+                </div>
+                <div class="daily m-block-10">
+                  <label for="month" class="relative"
+                    ><input type="radio" id="month" name="ch" />monthly</label
+                  >
+                </div>
+                <div class="daily">
+                  <label for="weakly" class="relative"
+                    ><input type="radio" id="weakly" name="ch" />weakly</label
+                  >
+                </div>
+              </section>
+              <section class="storage flex-between gap-10 mt-20">
+                <label for="megaman" class="mb-10 p-10 rad-6 flex-center gap-10">
+                  <input type="radio" name="storage" id="megaman" />
+                  <i class="fa-solid fa-server"></i>
+                  <span>megaman</span>
+                </label>
+                <label for="zero" class="mb-10 p-10 rad-6 flex-center gap-10">
+                  <input type="radio" name="storage" id="zero" />
+                  <i class="fa-solid fa-server"></i>
+                  <span>zero</span>
+                </label>
+                <label for="segma" class="mb-10 p-10 rad-6 flex-center gap-10">
+                  <input type="radio" name="storage" id="segma" />
+                  <i class="fa-solid fa-server"></i>
+                  <span>segma</span>
+                </label>
+              </section>
+            </form>
+          </article>
         </div>
         <!-- end widgits container -->
       </section>
