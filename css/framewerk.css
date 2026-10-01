@@ -95,6 +95,9 @@
 .bg-eee {
   background-color: #eee;
 }
+.bg-ccc {
+  background-color: #ccc;
+}
 .bg-grey {
   background-color: var(--grey-color);
 }
@@ -152,6 +155,9 @@
 }
 .c-white {
   color: #fff;
+}
+.c-ccc {
+  color: #ccc;
 }
 .c-black {
   color: #000;
