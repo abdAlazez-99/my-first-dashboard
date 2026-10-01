@@ -220,10 +220,19 @@ section.content header {
 
 /* wedgits container*/
 .settings {
-  grid-template-columns: repeat(auto-fill, minmax(21rem, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(22rem, 1fr));
+}
+@media (max-width: 767px) {
+  .settings {
+    margin: 10px;
+    grid-template-columns: minmax(100px, 1fr);
+  }
 }
 
 .settings .site-control {
+  .txt {
+    max-width: 300px;
+  }
   textarea {
     resize: none;
     width: 100%;
@@ -248,7 +257,7 @@ section.content header {
       align-items: flex-end;
       .inp {
         flex: 1;
-        input[type=email] {
+        input[type="email"] {
           background-color: #f0f4f8;
           color: #bbb;
           cursor: no-drop;
