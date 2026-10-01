@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/framewerk.css" />
+    <link rel="stylesheet" href="css/settings.css" />
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <title>settings</title>
+  </head>
+  <body>
+    <main class="d-flex">
+      <aside class="bg-white p-20 relative">
+        <h3 class="relative txt-center txt-cap">abd alazez</h3>
+        <ul>
+          <li>
+            <a
+              href="index.html"
+              class="c-black txt-cap p-10 d-flex al-center gap-10 rad-6"
+            >
+              <i class="fa-solid fa-chart-pie fa-fw"></i>
+              <span>dashboard</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="settings.html"
+              class="active c-black txt-cap p-10 d-flex al-center gap-10 rad-6"
+            >
+              <i class="fa-solid fa-gear fa-fw"></i>
+              <span>settings</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="profile.html"
+              class="c-black txt-cap p-10 d-flex al-center gap-10 rad-6"
+            >
+              <i class="fa-regular fa-user fa-fw"></i>
+              <span>profile</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="projects.html"
+              class="c-black txt-cap p-10 d-flex al-center gap-10 rad-6"
+            >
+              <i class="fa-solid fa-diagram-project fa-fw"></i>
+              <span>projects</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="courses.html"
+              class="c-black txt-cap p-10 d-flex al-center gap-10 rad-6"
+            >
+              <i class="fa-solid fa-graduation-cap fa-fw"></i>
+              <span>courses</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="friends.html"
+              class="c-black txt-cap p-10 d-flex al-center gap-10 rad-6"
+            >
+              <i class="fa-regular fa-circle-user fa-fw"></i>
+              <span>friends</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="files.html"
+              class="c-black txt-cap p-10 d-flex al-center gap-10 rad-6"
+            >
+              <i class="fa-regular fa-file fa-fw"></i>
+              <span>files</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="plans.html"
+              class="c-black txt-cap p-10 d-flex al-center gap-10 rad-6"
+            >
+              <i class="fa-regular fa-credit-card fa-fw"></i>
+              <span>plans</span>
+            </a>
+          </li>
+        </ul>
+      </aside>
+      <section class="content">
+        <header class="flex-between p-20 bg-white">
+          <div class="search relative">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="search" placeholder="type a keyword" />
+          </div>
+          <div class="icons d-flex al-center gap-10 relative">
+            <i class="fa-regular fa-bell fa-lg"></i>
+            <img src="images/avatar.png" alt="avatar" />
+          </div>
+        </header>
+        <h1 class="relative txt-cap p-20">settings</h1>
+
+        <!-- wedgits container -->
+        <div class="settings m-20 d-grid gap-20">
+          <div class="site-control bg-white rad-10 p-20 p-10-mobile">
+            <div class="title">
+              <h2>site control</h2>
+              <p>Control The Website If There Is Maintenance</p>
+            </div>
+            <div class="open-close flex-between">
+              <div class="txt">
+                <p class="fw-bold">Website Control</p>
+                <span class="fs-14 c-grey"
+                  >Open/Close Website And Type The Reason</span
+                >
+              </div>
+              <label class="toggle-switch d-flex al-center relative bg-ccc">
+                <input
+                  type="checkbox"
+                  class="bg-white c-ccc rad-half flex-center"
+                />
+              </label>
+            </div>
+            <textarea
+              placeholder="close message content"
+              class="mt-20 p-10 rad-6"
+            ></textarea>
+          </div>
+          <div class="general-info bg-white p-20 p-10-mobile rad-10">
+            <div class="title">
+              <h2>general info</h2>
+              <p>General Information About Your Account</p>
+            </div>
+            <form>
+              <div class="first-name">
+                <label for="f-name" class=" c-grey d-block">frist name</label>
+                <input type="text" placeholder="first name" id="f-name" class="rad-6 mt-5"/>
+              </div>
+
+              <div class="last-name m-block-10" >
+                <label for="l-name"class=" c-grey d-block">last name</label>
+                <input type="text" placeholder="last name" id="l-name" class="rad-6 mt-5"/>
+              </div>
+
+              <div class="email flex-between gap-10">
+                <div class="inp">
+                  <label for="email" class=" c-grey d-block">email</label>
+                  <input type="email" value="a@yy.ar" id="email"class="rad-6 mt-5" disabled />
+                </div>
+                <button>change</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <!-- end widgits container -->
+      </section>
+    </main>
+  </body>
+</html>
