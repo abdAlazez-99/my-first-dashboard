@@ -41,7 +41,7 @@ label.toggle-switch {
     position: absolute;
     width: 16px;
     height: 16px;
-    right: calc(100% - 19px);
+    right: calc(100% - 22px);
     transition: var(--duration);
     &::before {
       content: "\58";
