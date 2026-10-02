@@ -240,6 +240,51 @@ label.toggle-switch {
     }
   }
 
+  img {
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.title {
+  margin-bottom: 30px;
+  h2,
+  h2 + p:first-of-type {
+    margin-block: var(--px-x);
+  }
+  & h2 + p:first-of-type {
+    color: var(--grey-color);
+  }
+}
+
+h1 {
+  margin: var(--px-x) 0 var(--px-3x);
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    height: 3px;
+    bottom: 0;
+    left: var(--px-2x);
+  }
+  &::before {
+    width: 8.5rem;
+    background-color: #fff;
+  }
+  &::after {
+    background-color: #000;
+    width: 3rem;
+  }
+}
+
   &:has(input[type="checkbox"]:checked) {
     background-color: var(--blue-color);
   }
