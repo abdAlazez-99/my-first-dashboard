@@ -326,3 +326,33 @@ h1 {
     width: 3rem;
   }
 }
+label.toggle-switch {
+  width: 78px;
+  height: 32px;
+  border-radius: 15px;
+  transition: background-color var(--duration);
+  input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    right: calc(100% - 27px);
+    transition: var(--duration);
+    &::before {
+      content: "\58";
+      font-weight: 900;
+      font-family: var(--fa-family-classic);
+    }
+    &:checked {
+      &::before {
+        content: "\f00c";
+      }
+    }
+  }
+}
+label.toggle-switch {
+  &:has(input[type="checkbox"]:checked) {
+    background-color: var(--blue-color);
+  }
+}
